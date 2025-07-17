@@ -2,22 +2,147 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>S&STechAccociate</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>My Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset & Basics */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    nav {
+      background: #f8f9fa;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 40px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 4px;
+      transition: 0.3s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #eb5e5e;
+      color: white;
+    }
+
+    .cta {
+      background-color: #eb5e5e;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      color: #004080;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      color: #666;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <nav class="navbar">
-    <ul class="nav-left">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Services <span class="dropdown">▼</span></a></li>
-      <li><a href="#">About Us <span class="dropdown">▼</span></a></li>
-      <li><a href="#">Media <span class="dropdown">▼</span></a></li>
-      <li><a href="#">Case Studies</a></li>
-      <li><a href="#">Contact Us</a></li>
+
+  <header>
+    <h1>Welcome to My Company</h1>
+    <p>Your trusted partner in innovative solutions.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#case-studies">Case Studies</a></li>
+      <li><a href="#contact">Contact Us</a></li>
     </ul>
-    <div class="nav-right">
-      <a href="#" class="cta-button">Discuss a Project</a>
-    </div>
+    <a href="#contact" class="cta">Discuss a Project</a>
   </nav>
+
+  <section id="home">
+    <h2>Home</h2>
+    <p>Welcome to My Company — where ideas become reality. We specialize in delivering tailored tech solutions that drive impact and growth.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Custom Web Development</li>
+      <li>Mobile App Development</li>
+      <li>Cloud & DevOps Solutions</li>
+      <li>UI/UX Design</li>
+      <li>AI-Powered Automation</li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a team of passionate engineers, designers, and strategists committed to building digital products that make a difference. With years of experience, we blend creativity and technology to solve complex business problems.</p>
+  </section>
+
+  <section id="media">
+    <h2>Media</h2>
+    <p>Check out our latest product launches, press releases, event appearances, and media features. We love sharing our journey with the world!</p>
+  </section>
+
+  <section id="case-studies">
+    <h2>Case Studies</h2>
+    <p>Read how we’ve helped startups and enterprises scale their businesses through custom solutions, with measurable ROI and real-world impact.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have a project in mind? Let’s talk. Reach out through the button below or send us a message at <strong>hello@mycompany.com</strong>.</p>
+    <p><a href="mailto:hello@mycompany.com" class="cta">Send an Email</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 My Company. All rights reserved. | Powered by GitHub Pages
+  </footer>
+
 </body>
 </html>
